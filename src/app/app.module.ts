@@ -1,16 +1,49 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { LightboxModule } from 'ngx-lightbox';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderGlobalComponent } from './header-global/header-global.component';
+import { FooterGlobalComponent } from './footer-global/footer-global.component';
+import { HomeMainComponent } from './home-main/home-main.component';
+import { LearnMainComponent } from './learn-main/learn-main.component';
+import { UpdatesMainComponent } from './updates-main/updates-main.component';
+import { FeedbackMainComponent } from './feedback-main/feedback-main.component';
+import { LearnUtilityComponent } from './learn-utility/learn-utility.component';
+import { LearnMapsComponent } from './learn-maps/learn-maps.component';
+import { LearnWeaponsComponent } from './learn-weapons/learn-weapons.component';
+import { LearnAimComponent } from './learn-aim/learn-aim.component';
+import { LearnSprayComponent } from './learn-spray/learn-spray.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderGlobalComponent,
+    FooterGlobalComponent,
+    HomeMainComponent,
+    LearnMainComponent,
+    UpdatesMainComponent,
+    FeedbackMainComponent,
+    LearnUtilityComponent,
+    LearnMapsComponent,
+    LearnWeaponsComponent,
+    LearnAimComponent,
+    LearnSprayComponent
   ],
   imports: [
+    NgbModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    LightboxModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

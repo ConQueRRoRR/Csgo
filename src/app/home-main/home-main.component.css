@@ -1,0 +1,46 @@
+.main2 img{
+    height:200px;
+    width: 400px;
+}
+
+.main2 .col-lg-6 img{
+    animation:fadeIn 1s ease-in-out 1;
+    animation:fadeInDown 1.3s ease-in-out 1;
+    overflow:hidden;
+}
+
+.main2 .col-lg-6 h1:nth-child(3){
+    color:#fff;
+    font-family: 'Righteous';
+    animation:fadeInDown 1s ease-in-out 1;
+}
+
+.main2 .col-lg-6 h3{
+    animation:test 1.5s ease-in-out infinite;
+    /* font-family: 'Comfortaa'; */
+    color:#fff;
+    font-size:30px;
+}
+@keyframes test{
+    0%{
+        transform: translateY(0px) scale(1.2);
+        transition: .1s ease-in-out;
+    }
+    50%{
+        transform: scale(1.6) translateY(20px);
+        transition: .1s ease-in-out;
+        
+    }
+    100%{
+        transform: translateY(0px) scale(1.2);
+        transition: .1s ease-in-out;
+    }
+}
+.container-fluid
+{
+    height: 630px;
+}
+.fa-chevron-down{
+    font-size:30px;
+    cursor: pointer;
+}
