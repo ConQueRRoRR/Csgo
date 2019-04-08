@@ -1,6 +1,6 @@
 .main2 img{
-    height: 30vh;
-    width: 30vw;
+    height: 200px;
+    width: 360px;
 }
 
 .main2 .col-lg-6 img{
@@ -47,37 +47,95 @@
 }
 
 
-.SIDE{
-    height:85vh;
-    background-size: cover;
-    
-}
 
 .cts img{
-    background-size: cover;
-    width: 1000px;
-    position: relative;
-    left: 100px;
-    clip-path: polygon(100% 0, 0 0, 0 100%);
     opacity: 0.5;
     transition:0.7s ease-in-out;
+    border-radius: 15px;
+    border:2px solid black;
 }
-
 .cts img:hover{
     opacity: 1;
     transition:0.7s ease-in-out;
+    border:2px solid rgb(78, 88, 133);
+
 }
 .ts img{
-    background-size: cover;
-    width: 1000px;
-    position: relative;
-    right:410px;
-    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     opacity: 0.5;
     transition:0.7s ease-in-out;
+    border-radius: 15px;
+    border:2px solid black;
+
+}
+
+.ts h1{
+    opacity: 0;
+    transition:0.7s ease-in-out;
+    color:#ad935f;
+}
+
+.ts img:hover~h1{
+    opacity: 1;
+    transition:0.7s ease-in-out;
+}
+
+
+
+
+.cts h1{
+    opacity: 0;
+    transition:0.7s ease-in-out;
+    color:  rgb(78, 88, 133);
+}
+
+.cts img:hover~h1{
+    opacity: 1;
+    transition:0.7s ease-in-out;
+
 }
 
 .ts img:hover{
     opacity: 1;
     transition:0.7s ease-in-out;
+    border:2px solid #ad935f;
+
 }
+
+.col-lg-5 img{
+    overflow: hidden;
+    width:100%;
+    
+    background-position: center;
+    /* background-size: cover; */
+}
+
+
+app-ct-data{
+    animation:fadeInUp 1s ease-in-out 1;
+}
+
+.display-3{
+    font-family: "Questrial";
+    color:white;
+    
+}
+
+.forums h1{
+    color:white;
+    font-size:70px;
+}
+
+
+.row .col-lg-8 h1,span{
+    color:gray;
+}
+
+.container{
+    margin-top:200px;
+}
+
+@media screen and (min-width: 480px) {
+    .container{
+        margin-top:1000px;
+    }
+    }

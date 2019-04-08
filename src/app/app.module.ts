@@ -21,6 +21,8 @@ import { LearnAimComponent } from './learn-aim/learn-aim.component';
 import { LearnSprayComponent } from './learn-spray/learn-spray.component';
 import { DashboardInputComponent } from './dashboard-input/dashboard-input.component';
 import { UpdateDataComponent } from './update-data/update-data.component';
+import { CtDataComponent } from './ct-data/ct-data.component';
+import { TDataComponent } from './t-data/t-data.component';
 
 
 
@@ -40,7 +42,9 @@ import { UpdateDataComponent } from './update-data/update-data.component';
     LearnAimComponent,
     LearnSprayComponent,
     DashboardInputComponent,
-    UpdateDataComponent
+    UpdateDataComponent,
+    CtDataComponent,
+    TDataComponent
   ],
   imports: [
     NgbModule,

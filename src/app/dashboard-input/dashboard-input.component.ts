@@ -17,7 +17,6 @@ weapon_damage:string;
   weapon_recoil:String;
   arr:weaponClass[];
   selectedFile: File;
-  public uploader: FileUploader = new FileUploader({url: URL, itemAlias: 'photo'});
   constructor(private ws:WeaponServiceService,private route: ActivatedRoute,
     private router: Router,) { }
 
