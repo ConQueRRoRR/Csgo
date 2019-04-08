@@ -16,20 +16,15 @@ weapon_damage:string;
   weapon_FireRate:String;
   weapon_recoil:String;
   arr:weaponClass[];
-  selectedFile: File;
   constructor(private ws:WeaponServiceService,private route: ActivatedRoute,
     private router: Router,) { }
 
   ngOnInit() {
     this.ws.getdata().subscribe((data: weaponClass[]) => {this.arr = data;});
   }
-  onFileChanged(event) {
-    this.selectedFile = event.target.files[0];
-    console.log(this.selectedFile);
-  }
   add_data(){
     this.ws
-    .add_data(this.weapon_name,this.weapon_damage,this.weapon_recoil,this.weapon_FireRate,this.weapon_mobility,this.selectedFile);
+    .add_data(this.weapon_name,this.weapon_damage,this.weapon_recoil,this.weapon_FireRate,this.weapon_mobility);
   }
   
   deleteData(id) {
