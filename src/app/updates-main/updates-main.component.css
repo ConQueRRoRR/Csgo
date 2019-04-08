@@ -1,7 +1,7 @@
 .mainheading h1{
     font-family: 'Questrial';
     font-size:80px !important;
-    margin-top:100px;
+    margin-top:30vh;
 }
 .sample{
     /* background-image: radial-gradient(circle, #2e2e2e, #242424, #1a1a1a, #101010, #000000); */
@@ -20,6 +20,8 @@
 	transition: 0.5s cubic-bezier(0.4,0.0,1,1);
     animation: slideInLeft 1s ease-in-out 1;
     border:none;
+    height: 260px;
+    width: 400px;
 }
 
 .contentrow{
@@ -39,7 +41,7 @@
 }
 .container
 {
-    height: 430px;
+    height: 65vh;
     /* background-color: aqua; */
 }
 @keyframes test{

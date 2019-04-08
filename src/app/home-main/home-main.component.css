@@ -1,6 +1,6 @@
 .main2 img{
-    height:200px;
-    width: 400px;
+    height: 30vh;
+    width: 30vw;
 }
 
 .main2 .col-lg-6 img{
@@ -39,7 +39,7 @@
 }
 .container-fluid
 {
-    height: 630px;
+    height: 100vh;
 }    
 .fa-chevron-down{
     font-size:30px;
