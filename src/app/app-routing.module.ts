@@ -42,7 +42,7 @@ const routes: Routes = [{
   path:"dashboard",component:DashboardInputComponent
 },
 {
-  path:"update",component:UpdateDataComponent
+  path:"update/:id",component:UpdateDataComponent
 },
 ];
 @NgModule({

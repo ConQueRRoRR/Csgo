@@ -21,11 +21,11 @@ export class WeaponServiceService {
   getdata() {
     return this.http.get(`${this.url}`);
   }
-  // editData(id) {
-  //   return this
-  //           .http
-  //           .get(`${this.url}/edit/${id}`);
-  //   }
+  editData(id) {
+    return this
+            .http
+            .get(`${this.url}/edit/${id}`);
+    }
     up_data(weapon_name, weapon_damage, weapon_recoil,weapon_FireRate,weapon_mobility, id) {
 
       const obj = {
@@ -37,7 +37,7 @@ export class WeaponServiceService {
         };
       this
         .http
-        .post(`${this.url}/update/:${id}`, obj)
+        .post(`${this.url}/update/${id}`, obj)
         .subscribe(res => console.log('Done'));
     }
     deleteData(id) {

@@ -15,7 +15,7 @@ export class LearnWeaponsComponent implements OnInit {
   weapon_recoil:String;
    page=1;
    arr:weaponClass[];
-
+  noOfPages:any;
   constructor(private ws:WeaponServiceService) {
 
   }  

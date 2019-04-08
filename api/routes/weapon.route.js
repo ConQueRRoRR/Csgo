@@ -31,39 +31,42 @@ weaponRoute.route('/').get(function (req, res) {
 });
 
 // // Defined edit route
-// weaponRoute.route('/edit/:id').get(function (req, res) {
-//   let id = req.params.id;
-//   weapon.findById(id, function (err,weapons){
-//       res.json(weapons);
-//   });
-// });
+weaponRoute.route('/edit/:id').get(function (req, res) {
+  let id = req.params.id;
+  weapon.findById(id, function (err,weapons){
+      res.json(weapons);
+  });
+});
 
 // //  Defined update route
-weaponRoute.route('/update/:_id').post(function (req, res) {
+weaponRoute.route('/update/:id').post(function (req, res) {
   console.log("updating");
-    weapon.findById(req.params.id, function(err, next, weapons) {
-    if (!weapons)
-      return next(new Error('Could not load Document'));
+  weapon.findById(req.params.id, function(err, weapons) {
+    if (!weapons){
+      console.log(err);
+      console.log(req.params.id);
+      }
     else {
         weapons.weapon_name = req.body.weapon_name;
         weapons.weapon_damage = req.body.weapon_damage;
         weapons.weapon_recoil = req.body.weapon_recoil;
         weapons.weapon_FireRate = req.body.weapon_FireRate;
-        weapons.weapon_mobility = req.body.weapon_mobility
-
-        weapons.save().then(Weapon => {
-          res.json('Update complete');
+        weapons.weapon_mobility = req.body.weapon_mobility;
+        weapons.save().then(Weapon => {res.json('Update complete');
       })
       .catch(err => {
             res.status(400).send("unable to update the database");
       });
     }
   });
+  console.log(req.params.id);
 });
+// });
 
 // Defined delete | remove | destroy route
 weaponRoute.route('/delete/:id').get(function (req, res) {
-    weapon.findByIdAndRemove({_id: req.params.id}, function(err, business){
+  console.log(req.params.id);  
+  weapon.findByIdAndRemove({_id: req.params.id}, function(err, business){
         if(err) res.json(err);
         else res.json('Successfully removed');
     });

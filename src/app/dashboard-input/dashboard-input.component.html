@@ -69,7 +69,7 @@
             <td>{{objarr.weapon_FireRate}}</td>
             <td>{{objarr.weapon_mobility}}</td>
             <td colspan="2"><button class="button btn-dark" (click)="deleteData(objarr._id)">Delete</button>
-              <button class="button btn-dark" (click)="update_data(objarr._id)">Update</button>
+              <a class="button btn-dark" [routerLink]="['/update',objarr._id]">Update</a>
             </td>
           </tr>
           

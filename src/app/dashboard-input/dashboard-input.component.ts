@@ -31,9 +31,11 @@ weapon_damage:string;
       console.log('Deleted');
     });
   }
-  update_data(id){
-    this.ws.up_data(this.weapon_name,this.weapon_damage,this.weapon_recoil,this.weapon_FireRate,this.weapon_mobility,id);
-    console.log(id);
-    this.router.navigate(['update']);
-  }
+
+  // update_data(id){
+  //   this.ws.up_data(this.weapon_name,this.weapon_damage,this.weapon_recoil,this.weapon_FireRate,this.weapon_mobility,id);
+  //   console.log(id);
+  //   this.router.navigate(['update']);
+    
+  // }
 }
