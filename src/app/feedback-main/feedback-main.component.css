@@ -81,7 +81,8 @@ label{
 .form-control:focus{
 	background-color: transparent;
 	box-shadow: none;
-	color:white;
+    color:white;
+    text-align: center;
 
 }
 

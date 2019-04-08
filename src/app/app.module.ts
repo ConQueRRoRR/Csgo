@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { LightboxModule } from 'ngx-lightbox';
-
+import { WeaponServiceService } from './weapon-service.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +19,9 @@ import { LearnMapsComponent } from './learn-maps/learn-maps.component';
 import { LearnWeaponsComponent } from './learn-weapons/learn-weapons.component';
 import { LearnAimComponent } from './learn-aim/learn-aim.component';
 import { LearnSprayComponent } from './learn-spray/learn-spray.component';
+import { DashboardInputComponent } from './dashboard-input/dashboard-input.component';
+import { UpdateDataComponent } from './update-data/update-data.component';
+
 
 
 
@@ -35,7 +38,9 @@ import { LearnSprayComponent } from './learn-spray/learn-spray.component';
     LearnMapsComponent,
     LearnWeaponsComponent,
     LearnAimComponent,
-    LearnSprayComponent
+    LearnSprayComponent,
+    DashboardInputComponent,
+    UpdateDataComponent
   ],
   imports: [
     NgbModule,
@@ -45,7 +50,7 @@ import { LearnSprayComponent } from './learn-spray/learn-spray.component';
     LightboxModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [WeaponServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

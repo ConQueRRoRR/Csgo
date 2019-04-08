@@ -25,6 +25,7 @@ body{
   ::-webkit-scrollbar-thumb {
     /* background: rgb(red, green, blue);  */
     border-radius: 200px;
+    
   }
   
   /* Handle on hover */

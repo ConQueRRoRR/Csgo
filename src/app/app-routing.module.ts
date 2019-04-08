@@ -9,6 +9,9 @@ import { LearnAimComponent } from './learn-aim/learn-aim.component';
 import { LearnMapsComponent } from './learn-maps/learn-maps.component';
 import { LearnUtilityComponent } from './learn-utility/learn-utility.component';
 import { LearnWeaponsComponent } from './learn-weapons/learn-weapons.component';
+import { DashboardInputComponent } from './dashboard-input/dashboard-input.component';
+import { UpdateDataComponent } from './update-data/update-data.component';
+
 
 const routes: Routes = [{
   path:"",component:HomeMainComponent
@@ -34,6 +37,12 @@ const routes: Routes = [{
 },
 {
   path:"Weapons",component:LearnWeaponsComponent,outlet:'learn-outlet'
+},
+{
+  path:"dashboard",component:DashboardInputComponent
+},
+{
+  path:"update",component:UpdateDataComponent
 },
 ];
 @NgModule({
