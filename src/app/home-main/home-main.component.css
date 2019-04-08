@@ -45,3 +45,39 @@
     font-size:30px;
     cursor: pointer;
 }
+
+
+.SIDE{
+    height:85vh;
+    background-size: cover;
+    
+}
+
+.cts img{
+    background-size: cover;
+    width: 1000px;
+    position: relative;
+    left: 100px;
+    clip-path: polygon(100% 0, 0 0, 0 100%);
+    opacity: 0.5;
+    transition:0.7s ease-in-out;
+}
+
+.cts img:hover{
+    opacity: 1;
+    transition:0.7s ease-in-out;
+}
+.ts img{
+    background-size: cover;
+    width: 1000px;
+    position: relative;
+    right:410px;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    opacity: 0.5;
+    transition:0.7s ease-in-out;
+}
+
+.ts img:hover{
+    opacity: 1;
+    transition:0.7s ease-in-out;
+}
