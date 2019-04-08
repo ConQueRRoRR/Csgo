@@ -17,6 +17,9 @@ let weapon = new Schema({
     weapon_mobility:{
       type:String
     },
+    image_upload:{
+      type:String
+    },
   },
 {
     collection: 'Weapon'
