@@ -1,13 +1,9 @@
 .mainheading h1{
     font-family: 'Questrial';
     font-size:80px !important;
-    margin-top:30vh;
+    margin-top:200px;
 }
-.sample{
-    /* background-image: radial-gradient(circle, #2e2e2e, #242424, #1a1a1a, #101010, #000000); */
-    /* background-image: radial-gradient(circle, #0d0d0d, #0a0a0a, #070707, #030303, #000000); */
-    background-image: radial-gradient(circle, #0d0d0d, #0a0a0a, #070707, #030303, #000000);
-}
+
 .container h1{
     animation: fadeInUp 1.6s ease-in-out 1;
 }
@@ -20,8 +16,8 @@
 	transition: 0.5s cubic-bezier(0.4,0.0,1,1);
     animation: slideInLeft 1s ease-in-out 1;
     border:none;
-    height: 260px;
-    width: 400px;
+    /* height: 260px; */
+    /* width: 400px; */
 }
 
 .contentrow{
@@ -41,8 +37,7 @@
 }
 .container
 {
-    height: 65vh;
-    /* background-color: aqua; */
+    height: 630px;
 }
 @keyframes test{
     0%{
