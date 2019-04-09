@@ -6,6 +6,7 @@ config=require('./DB');
 
 const weaponRoute=require('./routes/weapon.route');
 const updateRoute=require('./routes/update.route');
+const feedbackRoute=require('./routes/feedback.route');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.DB, { useNewUrlParser: true }).then(
@@ -32,6 +33,7 @@ let port = process.env.PORT || 4000;
 
 app.use('/Weapon',weaponRoute);
 app.use('/Update',updateRoute);
+app.use('/Feedback',feedbackRoute);
 const server = app.listen(port,function(){
     console.log('Listening on port ' + port);
 });

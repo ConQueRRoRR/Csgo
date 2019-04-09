@@ -24,6 +24,7 @@ import { UpdateDataComponent } from './update-data/update-data.component';
 import { UploadImageComponent } from './upload-image/upload-image.component';
 import { FileSelectDirective } from 'ng2-file-upload';
 import { UpdatepageService } from './updatepage.service';
+import { FeedbackService } from './feedback.service';
 
 
 
@@ -55,7 +56,7 @@ import { UpdatepageService } from './updatepage.service';
     LightboxModule,
     HttpClientModule
   ],
-  providers: [WeaponServiceService,UpdatepageService],
+  providers: [WeaponServiceService,UpdatepageService,FeedbackService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
