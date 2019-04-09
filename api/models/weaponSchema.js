@@ -30,3 +30,4 @@ let weapon = new Schema({
 });
 
 module.exports = mongoose.model('weapon', weapon);
+

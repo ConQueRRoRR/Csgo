@@ -27,7 +27,11 @@ import { TDataComponent } from './t-data/t-data.component';
 =======
 import { UploadImageComponent } from './upload-image/upload-image.component';
 import { FileSelectDirective } from 'ng2-file-upload';
+<<<<<<< HEAD
 >>>>>>> cb670cdc3d219753168a46b096e3fd4cff49a875
+=======
+import { UpdatepageService } from './updatepage.service';
+>>>>>>> c1b00b4c35d583ec0061b6d7c752bab0bfdd01d7
 
 
 
@@ -64,7 +68,7 @@ import { FileSelectDirective } from 'ng2-file-upload';
     LightboxModule,
     HttpClientModule
   ],
-  providers: [WeaponServiceService],
+  providers: [WeaponServiceService,UpdatepageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

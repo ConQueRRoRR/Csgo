@@ -9,61 +9,17 @@
           <span (click)="scrollTo(area)"><h3 ><i class="fas fa-chevron-down"></i></h3></span> 
         </div>
 </div>
-
-<div class="row contentrow" #area> 
+<span *ngFor="let objarray of array">
+    <div class="row contentrow" #area> 
         <div class="col-lg-4 offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
             <img class="img-thumbnail" src="../../assets/images/VALVE.png">
         </div>
         <div class="col-lg-6 jumbotron text-center text-white bg-transparent">
-            <h1>The Panoramic UI</h1> 
-            <p>Today we’re launching a preview of the all-new Panorama UI for CS:GO. This visual overhaul is the most substantial change to the look and feel of CS:GO since the game was released in 2012.</p> 
+            <h1>{{objarray.heading}}</h1> 
+            <p>{{objarray.content}}</p> 
         </div>
 </div> 
 
+</span>
 
-<div class="row contentrow">
-    <div class="col-lg-4  offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
-        <img class="img-thumbnail" src="../../assets/images/aug.jpg">
-      </div>
-    <div class="col-lg-6 jumbotron text-center text-white bg-transparent">
-        <h1>The Aug Nerf</h1> 
-        <p>After several months at a discount, players have found their way to the AUG. Now that everyone has had a chance to learn to love it, the AUG has returned to its original price tag.</p> 
-    </div>
-  
-</div>
-
-<div class="row contentrow">
-    <div class="col-lg-4  offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
-        <img class="img-thumbnail" src="../../assets/images/winter_2018.png">
-      </div>
-    <div class="col-lg-6 jumbotron text-center text-white bg-transparent">
-        <h1>Winter Wonderland</h1> 
-        <p>Bundle up, it’s time to celebrate the winter season!
-          Toss a few snowballs and head over to snowy Militia, which is back for the holiday and currently available in Casual and Deathmatch game modes.
-          The C4 is all wrapped up, and chickens are sporting their finest festive wear–everyone’s getting into the holiday spirit!</p> 
-    </div>
-  
-</div>
-
-<div class="row contentrow">
-    <div class="col-lg-4  offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
-        <img class="img-thumbnail" src="../../assets/images/halloweenshot.jpg">
-      </div>
-    <div class="col-lg-6 jumbotron text-center text-white bg-transparent">
-        <h1>Graveyard Shift</h1> 
-        <p>For a limited time players can fright their way through a midnight makeover of Cobblestone. Along with Cobblestone’s haunting new look, players can torment their enemies from the grave as a ghost in Casual, Demolition, and Flying Scoutsman game modes.</p> 
-    </div>
-  
-</div>
-
-<div class="row contentrow">
-    <div class="col-lg-4  offset-lg-1 col-md-8 offset-md-2 col-sm-8 offset-sm-2">
-        <img class="img-thumbnail" src="../../assets/images/mp5sd_blog_nowords.jpg">
-      </div>
-    <div class="col-lg-6 jumbotron text-center text-white bg-transparent">
-        <h1>Silent But Deadly</h1> 
-        <p>Often imitated but never equaled, the iconic MP5 is perhaps the most versatile and popular SMG in the world. This SD variant comes equipped with an integrated silencer and features higher movement speed at the cost of some damage and accuracy on the move.</p> 
-    </div>
-  
-</div>
 </div>
