@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {  FileUploader, FileSelectDirective } from 'ng2-file-upload/ng2-file-upload';
 import { ActivatedRoute,Router } from '@angular/router';
-import { request } from 'https';
+// import { request } from 'https';
 const URL = 'http://localhost:4000/Weapon/upload';
 @Component({
   selector: 'app-upload-image',

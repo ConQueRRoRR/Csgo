@@ -70,6 +70,8 @@ app.post('/Weapon/upload',upload.single('photo'), function (req, res) {
 
 // Require weapon model in our routes module
 let  weapon= require('../models/weaponSchema');
+let  update= require('../models/updateSchema');
+
 
 // Defined store route
 weaponRoute.route('/add').post(function (req, res) {
@@ -95,6 +97,8 @@ weaponRoute.route('/').get(function (req, res) {
     }
   });
 });
+
+
 
 // // Defined edit route
 weaponRoute.route('/edit/:id').get(function (req, res) {

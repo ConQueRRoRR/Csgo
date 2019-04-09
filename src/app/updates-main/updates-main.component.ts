@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { updateClass } from '../weaponClass';
+import { UpdatepageService } from '../updatepage.service';
 
 @Component({
   selector: 'app-updates-main',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./updates-main.component.css']
 })
 export class UpdatesMainComponent implements OnInit {
-
-  constructor() { }
+  heading:string;
+  content:string;
+  array:updateClass[];
+  constructor(private us:UpdatepageService) { }
 
   ngOnInit() {
+    this.us.getdata().subscribe((data: updateClass[]) => {this.array = data;});
   }
   scrollTo(el:HTMLElement)
   {

@@ -23,6 +23,7 @@ import { DashboardInputComponent } from './dashboard-input/dashboard-input.compo
 import { UpdateDataComponent } from './update-data/update-data.component';
 import { UploadImageComponent } from './upload-image/upload-image.component';
 import { FileSelectDirective } from 'ng2-file-upload';
+import { UpdatepageService } from './updatepage.service';
 
 
 
@@ -54,7 +55,7 @@ import { FileSelectDirective } from 'ng2-file-upload';
     LightboxModule,
     HttpClientModule
   ],
-  providers: [WeaponServiceService],
+  providers: [WeaponServiceService,UpdatepageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
