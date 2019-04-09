@@ -11,6 +11,7 @@ import { LearnUtilityComponent } from './learn-utility/learn-utility.component';
 import { LearnWeaponsComponent } from './learn-weapons/learn-weapons.component';
 import { DashboardInputComponent } from './dashboard-input/dashboard-input.component';
 import { UpdateDataComponent } from './update-data/update-data.component';
+import { UploadImageComponent } from './upload-image/upload-image.component';
 
 
 const routes: Routes = [{
@@ -43,6 +44,9 @@ const routes: Routes = [{
 },
 {
   path:"update/:id",component:UpdateDataComponent
+},
+{
+  path:"upload/:id",component:UploadImageComponent
 },
 ];
 @NgModule({

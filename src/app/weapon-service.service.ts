@@ -6,16 +6,13 @@ import { HttpClient } from '@angular/common/http';
 export class WeaponServiceService {
   url='http://localhost:4000/Weapon';
   constructor(private http:HttpClient) { }
-  add_data(weapon_name, weapon_damage,weapon_recoil,weapon_FireRate,weapon_mobility,selectedFile) {
-    const uploadData = new FormData();
-    uploadData.append('myFile',selectedFile,selectedFile.name);
+  add_data(weapon_name, weapon_damage,weapon_recoil,weapon_FireRate,weapon_mobility) {
     const obj = {
       weapon_name: weapon_name,
       weapon_damage: weapon_damage,
       weapon_FireRate: weapon_FireRate,
       weapon_recoil: weapon_recoil,
       weapon_mobility: weapon_mobility,
-      image_upload:uploadData,
     };
     console.log(obj);
     this.http.post(`${this.url}/add`, obj)
@@ -48,4 +45,5 @@ export class WeaponServiceService {
                 .http
                 .get(`${this.url}/delete/${id}`);
     }
+    
 }

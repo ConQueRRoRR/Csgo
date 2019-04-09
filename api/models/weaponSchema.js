@@ -19,7 +19,11 @@ let weapon = new Schema({
     },
     image_upload:{
       type:String
+<<<<<<< HEAD
     }
+=======
+    },
+>>>>>>> cb670cdc3d219753168a46b096e3fd4cff49a875
   },
 {
     collection: 'Weapon'

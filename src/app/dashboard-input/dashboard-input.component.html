@@ -37,11 +37,14 @@
           <label >Weapon Mobility</label>
           <input type="text" class="form-control" name="weapon_mobility" [(ngModel)]="weapon_mobility" >
         </div>
+<<<<<<< HEAD
         <div class="form-group col-md-5">
           <label >image</label>
           <input type="file" name="photo" (change)="onFileChanged($event)" #fileInput >
 
         </div>
+=======
+>>>>>>> cb670cdc3d219753168a46b096e3fd4cff49a875
     </div>
     <button type="button" class="btn btn-dark" (click)="add_data()">Upload</button>
   </form>
@@ -68,7 +71,7 @@
         <td>{{objarr.weapon_FireRate}}</td>
         <td>{{objarr.weapon_mobility}}</td>
         <td colspan="2"><button class="button btn-dark" (click)="deleteData(objarr._id)">Delete</button>
-          <a class="button btn-dark" [routerLink]="['/update',objarr._id]">Update</a>
+          <a class="button btn-dark" [routerLink]="['/update',objarr._id]">Update</a><br>
           <a class="button btn-dark" [routerLink]="['/upload',objarr._id]">Upload Image</a>
         </td>
       </tr>
